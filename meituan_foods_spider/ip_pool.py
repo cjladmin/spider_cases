@@ -1,7 +1,7 @@
 # encoding: utf-8
 # @Time : 2022/4/22 16:18
 # @Author : Torres-圣君
-# @File : ip_pool.py
+# @File : ip_pool_run.py
 # @Sofaware : PyCharm
 import random
 

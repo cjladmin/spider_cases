@@ -3,3 +3,8 @@
 
  - 输入指定页数后，异步下载页面上的所有图片
 	 - 下载的图片都保存在：`all_images/`
+ - 该爬虫使用到的模块：
+	 - requests
+	 - aiohttp
+	 - asyncio
+	 - lxml
