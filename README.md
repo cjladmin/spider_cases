@@ -27,3 +27,9 @@
          - aiohttp
          - asyncio
          - lxml
+ - 获取淘宝商品相关信息：[taobao_commodity_spider](https://github.com/cjladmin/spider_cases/tree/main/taobao_commodity_spider)
+     - 该爬虫使用到的模块：
+         - selenium
+         - json
+         - time
+         - re
