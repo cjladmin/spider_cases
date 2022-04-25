@@ -1,5 +1,13 @@
 ## <center>✨个人爬虫练习案例✨</center>
 
+ - 搭建一个简易的免费IP代理池：[simple_ip_proxy_pool](https://github.com/cjladmin/spider_cases/tree/main/simple_ip_proxy_pool)
+     - 使用到的模块包含：
+         - lxml
+         - requests
+         - time
+         - json
+         - random
+         - threading
  - 获取网易云歌曲热门评论：[163music_comment_spider](https://github.com/cjladmin/spider_cases/tree/main/163music_comment_spider)
      - 该爬虫使用到的模块：
          - requests
