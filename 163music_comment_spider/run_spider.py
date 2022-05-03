@@ -35,7 +35,7 @@ def get_data(music_id):
 def save_data(title, item):
     data = json.dumps(item, indent=1, ensure_ascii=False)
     with open(f"data/{title}_热评.json", "a", encoding="utf-8") as w:
-        w.write(data)
+        w.write(data + ",")
 
 
 def get_music_id(music_name):

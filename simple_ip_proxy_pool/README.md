@@ -10,14 +10,17 @@
 ```python
 # 运行主方法：ip_pool_run.py 即可启动爬虫
 
-# 该爬虫使用到了threading多线程(没有做到极致，可自行后续优化)，同时对这些网站进行ip代理抓取
+# 该爬虫使用到了 多线程和协程 (没有做到极致，可自行后续优化)，同时对这些网站进行ip代理抓取
 # 将所有网站抓取到的ip添加到test_ip方法进行测试，如果代理可用则将其保存至ip_pool.json
+
+# 尚未实现ip代理池去重功能
 ```
 
  - 该程序使用到的模块包含：
      - lxml
-     - requests
-     - time
+     - request
      - json
      - random
      - threading
+     - asyncio
+     - aiohttp

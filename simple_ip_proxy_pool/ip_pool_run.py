@@ -3,6 +3,7 @@
 # @Author : Torres-圣君
 # @File : ip_poop_run.py
 # @Sofaware : PyCharm
+import asyncio
 from all_ip_agent import get_66ip, get_89ip, get_ip3366, get_ihuan, get_kuaidaili, get_jiangxianli
 import threading
 import os
@@ -29,6 +30,6 @@ if __name__ == '__main__':
     except:
         pass
     finally:
-        # 爬取所有网站前30页可用的IP代理
-        thread_run(30)
+        # 爬取所有网站前10页可用的IP代理
+        thread_run(10)
         print("爬取完毕！")

@@ -3,11 +3,12 @@
  - 搭建一个简易的免费IP代理池：[simple_ip_proxy_pool](https://github.com/cjladmin/spider_cases/tree/main/simple_ip_proxy_pool)
      - 使用到的模块包含：
          - lxml
-         - requests
-         - time
+         - request
          - json
          - random
          - threading
+         - asyncio
+         - aiohttp
  - 获取网易云歌曲热门评论：[163music_comment_spider](https://github.com/cjladmin/spider_cases/tree/main/163music_comment_spider)
      - 该爬虫使用到的模块：
          - requests
@@ -48,4 +49,7 @@
          - json
          - lxml
          - re
-
+ - 获取城市实时疫情数据信息：[yiqing_data_spider](https://github.com/cjladmin/spider_cases/tree/main/yiqing_data_spider)
+     - 该爬虫使用到的模块：
+         - re
+         - requests

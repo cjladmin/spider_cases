@@ -28,7 +28,7 @@ def get_data(num):
 def parse(url):
     try:
         global next_url
-        res = requests.get(url, headers=headers, timeout=2)
+        res = requests.get(url, headers=headers)
         page = etree.HTML(res.text)
         ip_list = page.xpath('//table//tr')
         # print(len(ip_list))

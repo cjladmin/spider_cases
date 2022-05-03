@@ -13,7 +13,19 @@ import json
 class SaveTaobaoData:
     def __init__(self, search_content):
         self.search_content = search_content
-        self.driver = webdriver.Edge()
+        self.options = webdriver.EdgeOptions()
+        self.options.add_argument("start-maximized")
+        self.options.add_experimental_option("excludeSwitches", ["enable-automation"])
+        self.options.add_experimental_option("useAutomationExtension", False)
+        self.driver = webdriver.Edge(options=self.options)
+        # 隐藏webdriver指纹
+        self.driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
+            "source": """
+                Object.defineProperty(navigator, 'webdriver', {
+                    get: () => false
+                })
+            """
+        })
 
     def get_page(self):
         # 访问淘宝网址
