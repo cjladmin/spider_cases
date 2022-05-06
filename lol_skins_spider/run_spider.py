@@ -70,6 +70,7 @@ class LolSkins:
         return skins_list
 
     def save_data(self, all_skins_data):
+        # JSON序列化
         json_data = json.dumps(all_skins_data, indent=1, ensure_ascii=False)
         with open("lol_skins_data.json", "w", encoding="utf-8") as w:
             w.write(json_data)

@@ -53,3 +53,9 @@
      - 该爬虫使用到的模块：
          - re
          - requests
+ - 获取LOL道具城所有皮肤信息：[lol_skins_spider](https://github.com/cjladmin/spider_cases/tree/main/lol_skins_spider)
+     - 该爬虫使用到的模块：
+         - requests
+         - re
+         - time
+         - json
