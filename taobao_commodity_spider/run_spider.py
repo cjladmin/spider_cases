@@ -1,7 +1,7 @@
 # encoding: utf-8
 # @Time : 2022/4/24 14:57
 # @Author : Torres-圣君
-# @File : run_spider.py
+# @File : douban_run_spider.py
 # @Sofaware : PyCharm
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys

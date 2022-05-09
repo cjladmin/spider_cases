@@ -1,7 +1,7 @@
 # encoding: utf-8
 # @Time : 2022/4/22 14:59
 # @Author : Torres-圣君
-# @File : run_spider.py
+# @File : douban_run_spider.py
 # @Sofaware : PyCharm
 import json
 import re

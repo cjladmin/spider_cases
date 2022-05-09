@@ -53,9 +53,16 @@
      - 该爬虫使用到的模块：
          - re
          - requests
- - 获取LOL道具城所有皮肤信息：[lol_skins_spider](https://github.com/cjladmin/spider_cases/tree/main/lol_skins_spider)
+ - 获取LOL道聚城所有皮肤信息：[lol_skins_spider](https://github.com/cjladmin/spider_cases/tree/main/lol_skins_spider)
      - 该爬虫使用到的模块：
          - requests
          - re
          - time
          - json
+ - 下载B站非会员专享的视频：[bilibili_vedio_spider](https://github.com/cjladmin/spider_cases/tree/main/bilibili_vedio_spider)
+     - 该爬虫使用到的模块：
+         - requests
+         - time
+         - json
+         - subprocess
+         - os

@@ -1,7 +1,7 @@
-## <center>✨获取LOL道具城所有皮肤信息✨</center>
- - LOL道具城所有皮肤：[https://daoju.qq.com/lol/list/17-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml](https://daoju.qq.com/lol/list/17-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml)
+## <center>✨获取LOL道聚城所有皮肤信息✨</center>
+ - LOL道聚城所有皮肤：[https://daoju.qq.com/lol/list/17-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml](https://daoju.qq.com/lol/list/17-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml)
 
- - 爬取LOL道具城所有皮肤，包含：
+ - 爬取LOL道聚城所有皮肤，包含：
     - 皮肤名称
     - 皮肤价格(点券)
     - 皮肤上架日期

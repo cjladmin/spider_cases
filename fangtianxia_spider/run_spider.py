@@ -1,7 +1,7 @@
 # encoding: utf-8
 # @Time : 2022/4/26 18:38
 # @Author : Torres-圣君
-# @File : run_spider.py
+# @File : douban_run_spider.py
 # @Sofaware : PyCharm
 # https://zz.newhouse.fang.com/house/s/
 import requests
