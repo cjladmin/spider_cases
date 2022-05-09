@@ -39,6 +39,8 @@ class DownloadVideo:
         self.save_data(video_title, audio_url, video_url)
 
     def save_data(self, video_title, audio_url, video_url):
+        os.mkdir('./data')
+
         # 保存音频数据
         print("正在保存音频数据...")
         audio_data = requests.get(audio_url, headers=self.headers).content
