@@ -1,4 +1,7 @@
-#  <center> ✨个人爬虫练习案例✨  </center>
+
+<div align="center">
+
+#  ✨个人爬虫练习案例✨
 
 | 爬虫案例 | 快捷导航 |
 | :------------------------: | :--: |
@@ -15,8 +18,11 @@
 | 下载B站非会员专享的视频 | [bilibili_vedio_spider](https://github.com/cjladmin/spider_cases/tree/main/bilibili_vedio_spider) |
 | 获取拉钩网岗位的招聘信息 | [lagou_jobs_spider](https://github.com/cjladmin/spider_cases/tree/main/lagou_jobs_spider) |
 
+</div>
 
-
+---
+---
+---
 
  - 搭建一个简易的免费IP代理池：[simple_ip_proxy_pool](https://github.com/cjladmin/spider_cases/tree/main/simple_ip_proxy_pool)
      - 使用到的模块包含：
