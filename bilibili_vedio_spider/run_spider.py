@@ -39,22 +39,25 @@ class DownloadVideo:
         self.save_data(video_title, audio_url, video_url)
 
     def save_data(self, video_title, audio_url, video_url):
-        # 保存音频数据
-        print("正在保存音频数据...")
-        audio_data = requests.get(audio_url, headers=self.headers).content
-        with open(f"./data/{video_title}.mp3", "wb") as w:
-            w.write(audio_data)
-            print("音频数据保存完毕...")
+        try:
+            os.mkdir('./data')
+        finally:
+            # 保存音频数据
+            print("正在保存音频数据...")
+            audio_data = requests.get(audio_url, headers=self.headers).content
+            with open(f"./data/{video_title}.mp3", "wb") as w:
+                w.write(audio_data)
+                print("音频数据保存完毕...")
 
-        # 保存视频数据
-        print("正在保存视频数据...")
-        video_data = requests.get(video_url, headers=self.headers).content
-        with open(f"./data/{video_title}.mp4", "wb") as w:
-            w.write(video_data)
-            print("视频数据保存完毕...")
+            # 保存视频数据
+            print("正在保存视频数据...")
+            video_data = requests.get(video_url, headers=self.headers).content
+            with open(f"./data/{video_title}.mp4", "wb") as w:
+                w.write(video_data)
+                print("视频数据保存完毕...")
 
-        # 合并音频和视频
-        self.combined_data(video_title)
+            # 合并音频和视频
+            self.combined_data(video_title)
 
     def combined_data(self, video_title):
         # 需要将ffmpeg配置到环境变量

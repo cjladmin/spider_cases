@@ -66,3 +66,8 @@
          - json
          - subprocess
          - os
+ - 获取拉钩网岗位的招聘信息：[lagou_jobs_spider](https://github.com/cjladmin/spider_cases/tree/main/lagou_jobs_spider)
+     - 该爬虫使用到的模块：
+         - os
+         - csv
+         - playwright
