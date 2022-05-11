@@ -17,6 +17,7 @@
 | 获取LOL道聚城所有皮肤信息 | [lol_skins_spider](https://github.com/cjladmin/spider_cases/tree/main/lol_skins_spider) | requests、re、time、json |
 | 下载B站非会员专享的视频 | [bilibili_vedio_spider](https://github.com/cjladmin/spider_cases/tree/main/bilibili_vedio_spider) | requests、time、json、subprocess、os |
 | 获取拉钩网岗位的招聘信息 | [lagou_jobs_spider](https://github.com/cjladmin/spider_cases/tree/main/lagou_jobs_spider) | os、csv、playwright |
+<<<<<<< HEAD
 | 获取猫眼电影实时数据 | [maoyan_data_spider](https://github.com/cjladmin/spider_cases/tree/main/maoyan_data_spider) | requests、lxml、openpyxl |
 
 </div>
