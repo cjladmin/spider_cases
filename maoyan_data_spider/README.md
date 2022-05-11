@@ -1,0 +1,13 @@
+## <center>✨获取猫眼电影实时数据✨</center>
+ - 猫眼专业版实时数据：[https://piaofang.maoyan.com/](https://piaofang.maoyan.com/)
+ - 一键爬取猫眼实时数据，包含：
+    - 电影实时票房
+    - 电影当日排片
+    - 网络影视热度榜
+    - 电视收视节目排行
+ - 爬取的数据存储方式：
+    - 通过使用`openpyxl`模块，将爬取的数据存储到`data`文件夹下的`猫眼实时数据.xlsx`表格
+ - 该爬虫使用到的模块：
+	 - requests
+	 - lxml
+	 - openpyxl
