@@ -31,5 +31,5 @@ if __name__ == '__main__':
         pass
     finally:
         # 爬取所有网站前10页可用的IP代理
-        thread_run(10)
+        thread_run(5)
         print("爬取完毕！")

@@ -1,0 +1,22 @@
+## <center>✨获取虎牙直播平台在播用户✨</center>
+ - 虎牙直播全分类网站：[https://www.huya.com/g](https://www.huya.com/g)
+
+ - 输入指定岗位，抓取该岗位的所有招聘信息，包含：
+    - 主播头像链接
+    - 主播昵称
+    - 房间ID号
+    - 房间标题
+    - 房间标签
+    - 直播链接
+ - 爬取的数据存储方式：
+    - 文件`all_types_msg.json`存放了虎牙平台实时分类的信息，包含分类的名称、分类的链接、分类的ID
+    - 通过使用`openpyxl`模块，将爬取的数据存储到`data`文件夹下的`xxx_直播用户信息.xlsx`表格
+    - 关于主播头像，本打算直接在Excel中插入图片，但考虑速度问题，暂以链接形式填充
+ - 该爬虫使用到的模块：
+	 - threading
+	 - requests
+	 - json
+	 - time
+	 - lxml
+	 - openpyxl
+	 - random

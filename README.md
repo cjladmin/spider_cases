@@ -18,5 +18,7 @@
 | 下载B站非会员专享的视频 | [bilibili_vedio_spider](https://github.com/cjladmin/spider_cases/tree/main/bilibili_vedio_spider) | requests、time、json、subprocess、os |
 | 获取拉钩网岗位的招聘信息 | [lagou_jobs_spider](https://github.com/cjladmin/spider_cases/tree/main/lagou_jobs_spider) | os、csv、playwright |
 | 获取猫眼电影实时数据 | [maoyan_data_spider](https://github.com/cjladmin/spider_cases/tree/main/maoyan_data_spider) | requests、lxml、openpyxl |
+| 获取虎牙直播平台在播用户 | [huya_all_types_spider](https://github.com/cjladmin/spider_cases/tree/main/huya_all_types_spider) | threading、requests、json、time、lxml、openpyxl、random |
 
 </div>
+
