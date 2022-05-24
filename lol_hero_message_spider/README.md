@@ -1,0 +1,19 @@
+## <center>✨获取LOL全英雄的资料信息✨</center>
+ - LOL全英雄资料信息网站：[https://yz.lol.qq.com/zh_CN/champions/](https://yz.lol.qq.com/zh_CN/champions/)
+
+ - 获取LOL全英雄的资料信息，包含：
+    - 上线日期
+    - 英文名称
+    - 英雄名称
+    - 英雄定位
+    - 英雄台词
+    - 英雄链接
+    - 原画链接
+    - 故事简述
+    - 背景故事
+ - 爬取的数据存储方式：
+    - 通过w写入模式，将爬取的数据存储到`heroes_data.json`文件
+ - 该爬虫使用到的模块：
+	 - requests
+	 - json
+	 - time
