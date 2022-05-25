@@ -13,6 +13,7 @@ class uMeitu:
     def __init__(self):
         self.url = "https://www.umeitu.com/e/action/get_img_a.php"
         self.headers = {
+            'referer': 'https://www.umeitu.com/katongdongman/dongmantupian/',
             'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44',
         }
 
