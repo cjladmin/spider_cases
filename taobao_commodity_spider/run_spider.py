@@ -5,6 +5,8 @@
 # @Sofaware : PyCharm
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver import ActionChains as ac
+import random
 import time
 import re
 import json
@@ -13,19 +15,16 @@ import json
 class SaveTaobaoData:
     def __init__(self, search_content):
         self.search_content = search_content
-        self.options = webdriver.EdgeOptions()
-        self.options.add_argument("start-maximized")
-        self.options.add_experimental_option("excludeSwitches", ["enable-automation"])
-        self.options.add_experimental_option("useAutomationExtension", False)
-        self.driver = webdriver.Edge(options=self.options)
-        # 隐藏webdriver指纹
-        self.driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
-            "source": """
-                Object.defineProperty(navigator, 'webdriver', {
-                    get: () => false
-                })
-            """
-        })
+        self.options = webdriver.ChromeOptions()
+        self.options.add_experimental_option('excludeSwitches', ['enable-automation'])
+        self.options.add_experimental_option('useAutomationExtension', False)
+        self.driver = webdriver.Chrome(options=self.options)
+        self.driver.execute_cdp_cmd(
+            'Page.addScriptToEvaluateOnNewDocument',
+            {
+                'source': 'Object.defineProperty(navigator, "webdriver", {get: () => undefined})'
+            }
+        )
 
     def get_page(self):
         # 访问淘宝网址
@@ -48,7 +47,7 @@ class SaveTaobaoData:
         # 解析页面提取数据
         self.get_page_data()
         # 进入下一页
-        self.get_next_page(page_number)
+        self.get_next_page(self.driver, page_number)
 
     def get_page_data(self):
         # 模拟真人操作，拖动滚动条
@@ -80,14 +79,23 @@ class SaveTaobaoData:
         # 保存数据
         self.save_data(data_list)
 
-    def get_next_page(self, page_number):
+    def get_next_page(self, driver, page_number):
         for i in range(44, page_number*44, 44):
-            # 隐式等待
-            self.driver.implicitly_wait(10)
-            # 强制再休息1秒，防止被反爬，真怕了
-            time.sleep(1)
             # 构造每页的链接
             self.driver.get(f"https://s.taobao.com/search?q={self.search_content}&s={i}")
+            # 隐式等待
+            self.driver.implicitly_wait(10)
+            # 判断是否出现验证码
+            content = driver.page_source
+            if "亲，请拖动下方滑块完成验证" in content:
+                con = self.hua_kuai(driver)
+                count = 0
+                while "亲，请拖动下方滑块完成验证" in con and count <= 3:
+                    con = self.hua_kuai(driver)
+                    count += 1
+                    if count == 3:
+                        print("已尽力尝试自动滑动验证码，但抱歉没能通过，请手动滑一下吧~")
+                        input("正在等待手动滑动，滑动完成后按回车！")
             # 解析页面数据
             self.get_page_data()
 
@@ -100,6 +108,33 @@ class SaveTaobaoData:
         # 打开文件写入数据
         with open(f"data/{self.search_content}_商品信息.json", "a", encoding="utf-8") as w:
             w.write(f'"{ft}": ' + data + ",")
+
+    def hua_kuai(self, driver):
+        print("触发验证码系统，正在自动处理！")
+        img = driver.find_element_by_xpath('//*[@id="nc_1__scale_text"]/span')
+        size = img.size
+        # 标签宽度
+        rangle_x = size['width']
+        ele = driver.find_element_by_xpath('//*[@id="nc_1_n1z"]')
+        print("验证码框体宽度：", rangle_x)
+        button_location = ele.location
+        # 滑块的y轴位置
+        rangle_y = button_location['y']
+        print("滑块的y轴位置：：", rangle_y)
+        # 按住滑块元素不放
+        ac(driver).click_and_hold(ele).perform()
+        # 拖动滑块
+        ac(driver).move_by_offset(300, random.randint(-5, 5)).perform()
+        # 松开鼠标
+        ac(driver).release().perform()
+        # 加载页面
+        time.sleep(2)
+        try:
+            # 点击重新滑动按钮
+            driver.find_element_by_xpath('//*[@id="`nc_1_refresh1`"]').click()
+        except:
+            pass
+        return driver.page_source
 
 
 if __name__ == '__main__':

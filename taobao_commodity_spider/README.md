@@ -14,3 +14,4 @@
 	 - json
 	 - time
 	 - re
+	 - random
