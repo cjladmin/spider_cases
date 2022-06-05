@@ -11,7 +11,7 @@
 | 获取异步社区所有图书信息 | [yibu_book_spider](https://github.com/cjladmin/spider_cases/tree/main/yibu_book_spider) | requests、pymongo |
 | 获取CSDN博客所有分类的热榜文章 | [csdn_hot_search_spider](https://github.com/cjladmin/spider_cases/tree/main/csdn_hot_search_spider) | requests、time、json |
 | 异步爬取优美图库动漫图片 | [umeitu_dongman_spider](https://github.com/cjladmin/spider_cases/tree/main/umeitu_dongman_spider) | requests、aiohttp、asyncio、lxml |
-| 获取淘宝商品相关信息 | [taobao_commodity_spider](https://github.com/cjladmin/spider_cases/tree/main/taobao_commodity_spider) | selenium、json、time、re、random |
+| 获取淘宝商品相关信息 | [taobao_commodity_spider](https://github.com/cjladmin/spider_cases/tree/main/taobao_commodity_spider) | re、time、random、selenium、openpyxl |
 | 爬取房天下全部的楼盘数据 | [fangtianxia_spider](https://github.com/cjladmin/spider_cases/tree/main/fangtianxia_spider) | requests、time、json、lxml、re |
 | 获取城市实时疫情数据信息 | [yiqing_data_spider](https://github.com/cjladmin/spider_cases/tree/main/yiqing_data_spider) | re、requests |
 | 获取LOL道聚城所有皮肤信息 | [lol_skins_spider](https://github.com/cjladmin/spider_cases/tree/main/lol_skins_spider) | requests、re、time、json |
