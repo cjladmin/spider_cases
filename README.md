@@ -21,6 +21,7 @@
 | 获取虎牙直播平台在播用户 | [huya_all_types_spider](https://github.com/cjladmin/spider_cases/tree/main/huya_all_types_spider) | threading、requests、json、time、lxml、openpyxl、random |
 | 获取LOL全英雄的资料信息 | [lol_hero_message_spider](https://github.com/cjladmin/spider_cases/tree/main/lol_hero_message_spider) | requests、json、time |
 | 查询12306火车票信息 | [12306_query_spider](https://github.com/cjladmin/spider_cases/tree/main/12306_query_spider) | requests、json、openpyxl、prettytable |
+| 获取豆瓣年度电影榜单 | [douban_annual_list_spider](https://github.com/cjladmin/spider_cases/tree/main/douban_annual_list_spider) | re、time、requests、openpyxl、selenium |
 
 </div>
 

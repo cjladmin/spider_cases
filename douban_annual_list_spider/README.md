@@ -1,0 +1,19 @@
+## <center>✨获取豆瓣年度电影榜单✨</center>
+ - 豆瓣2021电影榜单：[https://movie.douban.com/annual/2021?source=navigation](https://movie.douban.com/annual/2021?source=navigation)
+
+ - 获取2021-2015豆瓣年度电影榜单，包含：
+    - 电影标题
+    - 电影链接
+    - 电影评分
+    - 电影影长
+    - 电影类型
+    - 制片地区
+ - 该爬虫爬取的数据，全部通过`re正则`来解析的
+ - 爬取的数据存储方式：
+    - 使用`openpyxl`模块，将数据写入`榜单电影链接.xlsx`表格中
+ - 该爬虫使用到的模块：
+	 - re
+	 - time
+	 - requests
+	 - openpyxl
+	 - selenium
