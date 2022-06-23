@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/crypto-js/4.1.0/core.min.js"></script>
+<!--
+  wordArray1: 参数a
+  wordArray2: 参数s
+  utf8String1: 密钥
+  utf8String2: 偏移量
+-->
+<script type="text/javascript">
+    var wordArray1 = {
+        "$super": {
+            "$super": {}
+        },
+        "words": [
+            1634021683,
+            1697669476,
+            959931236,
+            1681286449,
+            842281016,
+            1633891632,
+            909337656,
+            943141425
+        ],
+        "sigBytes": 32
+    };
+    var wordArray2 = {
+        "$super": {
+            "$super": {}
+        },
+        "words": [
+            1734702147,
+            1818325875,
+            1181904749,
+            1181314149
+        ],
+        "sigBytes": 16
+    };
+    var utf8String1 = CryptoJS.enc.Utf8.stringify(wordArray1);
+    var utf8String2 = CryptoJS.enc.Utf8.stringify(wordArray2);
+    document.write("密钥：" + utf8String1, "偏移量：" + utf8String2);
+</script>
+</html>

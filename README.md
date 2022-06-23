@@ -22,6 +22,7 @@
 | 获取LOL全英雄的资料信息 | [lol_hero_message_spider](https://github.com/cjladmin/spider_cases/tree/main/lol_hero_message_spider) | requests、json、time |
 | 查询12306火车票信息 | [12306_query_spider](https://github.com/cjladmin/spider_cases/tree/main/12306_query_spider) | requests、json、openpyxl、prettytable |
 | 获取豆瓣年度电影榜单 | [douban_annual_list_spider](https://github.com/cjladmin/spider_cases/tree/main/douban_annual_list_spider) | re、time、requests、openpyxl、selenium |
+| 获取豆瓣年度电影榜单 | [gupiao_rank_spider](https://github.com/cjladmin/spider_cases/tree/main/gupiao_rank_spider) | requests、time、json、openpyxl、Crypto、base64 |
 
 </div>
 
