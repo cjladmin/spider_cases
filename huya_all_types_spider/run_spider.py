@@ -1,7 +1,7 @@
 # encoding: utf-8
 # @Time : 2022/5/18 17:36
 # @Author : Torres-圣君
-# @File : run_spider.py
+# @File : download_fonts.py
 # @Sofaware : PyCharm
 # https://www.huya.com/g         全部分类链接
 import threading
