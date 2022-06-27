@@ -44,6 +44,7 @@
 | 案例名称 | 快速定位 | 爬虫所需模块 |
 | :------------------------: | :--: | :------------------------: |
 | 大众点评商铺信息 | [dianping_font_decrypt](https://github.com/cjladmin/spider_cases/tree/main/dianping_font_decrypt) | requests、fontTools、json、lxml、re |
+| 大众点评评论信息 | [dianping_comment_spider](https://github.com/cjladmin/spider_cases/tree/main/dianping_comment_spider) | requests、lxml、re |
 
 </div>
 

@@ -24,19 +24,19 @@ class DetailedData:
         # 评分
         score = ''.join(html.xpath('//div[@class="brief-info"]/span[1]/@title'))
         # 评价数
-        comment = ''.join(html.xpath('//span[@id="reviewCount"]//text()')).replace('条评价 ', '').strip(' ')
+        comment = ''.join(html.xpath('//span[@id="reviewCount"]//text()')).replace('条评价 ', '').strip()
         # 人均消费
-        price = ''.join(html.xpath('//span[@id="avgPriceTitle"]//text()')).replace('人均:', '').strip(' ')
+        price = ''.join(html.xpath('//span[@id="avgPriceTitle"]//text()')).replace('人均:', '').strip()
         # 口味评分
-        taste = ''.join(html.xpath('//span[@id="comment_score"]/span[1]//text()')).replace('口味:', '').strip(' ')
+        taste = ''.join(html.xpath('//span[@id="comment_score"]/span[1]//text()')).replace('口味:', '').strip()
         # 环境评分
-        environment = ''.join(html.xpath('//span[@id="comment_score"]/span[2]//text()')).replace('环境:', '').strip(' ')
+        environment = ''.join(html.xpath('//span[@id="comment_score"]/span[2]//text()')).replace('环境:', '').strip()
         # 服务评分
-        service = ''.join(html.xpath('//span[@id="comment_score"]/span[3]//text()')).replace('服务:', '').strip(' ')
+        service = ''.join(html.xpath('//span[@id="comment_score"]/span[3]//text()')).replace('服务:', '').strip()
         # 地址
-        address = ''.join(html.xpath('//span[@id="address"]//text()')).strip(' ')
+        address = ''.join(html.xpath('//span[@id="address"]//text()')).strip()
         # 电话
-        phone = ''.join(html.xpath('//p[@class="expand-info tel"]//text()')).replace('电话：', '').strip(' ')
+        phone = ''.join(html.xpath('//p[@class="expand-info tel"]//text()')).replace('电话：', '').strip()
         # 这里只做演示，直接把提取过程写在列表内返回更好
         item = [title, score, comment, price, taste, environment, service, address, phone]
         print(item)

@@ -1,7 +1,7 @@
 ## <center>✨获取大众点评商铺详细信息✨</center>
  - 随便拿一家店铺做个测试：[https://www.dianping.com/shop/H1XZuxIfuHl8meAJ](https://www.dianping.com/shop/H1XZuxIfuHl8meAJ)
 
- - 爬取CSDN所有分类的热榜文章信息，包含：
+ - 获取大众点评商铺详细信息，包含：
     - 店名
     - 评分
     - 评价数
