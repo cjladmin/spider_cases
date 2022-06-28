@@ -25,6 +25,7 @@
 | 网易云歌曲热门评论 | [163music_comment_spider](https://github.com/cjladmin/spider_cases/tree/main/163music_comment_spider) | requests、selenium、json |
 | 美团美食的店铺信息 | [meituan_foods_spider](https://github.com/cjladmin/spider_cases/tree/main/meituan_foods_spider) | requests、re、time、json、pymongo |
 | 优美图库的动漫图片 | [umeitu_dongman_spider](https://github.com/cjladmin/spider_cases/tree/main/umeitu_dongman_spider) | requests、aiohttp、asyncio、lxml |
+| 下载抖音作者视频 | [douyin_video_spider](https://github.com/cjladmin/spider_cases/tree/main/douyin_video_spider) | re、os、time、requests、selenium |
 | 下载B站非会员视频 | [bilibili_vedio_spider](https://github.com/cjladmin/spider_cases/tree/main/bilibili_vedio_spider) | requests、time、json、subprocess、os |
 | 猫眼电影实时数据 | [maoyan_data_spider](https://github.com/cjladmin/spider_cases/tree/main/maoyan_data_spider) | requests、lxml、openpyxl |
 | 虎牙在播的所有用户 | [huya_all_types_spider](https://github.com/cjladmin/spider_cases/tree/main/huya_all_types_spider) | threading、requests、json、time、lxml、openpyxl、random |
