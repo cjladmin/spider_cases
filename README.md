@@ -39,6 +39,7 @@
 
 | 案例名称 | 快速定位 | 爬虫所需模块 |
 | :------------------------: | :--: | :------------------------: |
+| 有道在线翻译接口 | [youdao_fanyi_spider](https://github.com/cjladmin/spider_cases/tree/main/youdao_fanyi_spider) | requests、hashlib、time |
 | 东方财富个股人气榜 | [gupiao_rank_spider](https://github.com/cjladmin/spider_cases/tree/main/gupiao_rank_spider) | requests、time、json、openpyxl、Crypto、base64 |
 
 ##  字体反爬案例
