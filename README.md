@@ -48,6 +48,7 @@
 | 大众点评商铺信息 | [dianping_font_decrypt](https://github.com/cjladmin/spider_cases/tree/main/dianping_font_decrypt) | requests、fontTools、json、lxml、re |
 | 大众点评评论信息 | [dianping_comment_spider](https://github.com/cjladmin/spider_cases/tree/main/dianping_comment_spider) | requests、lxml、re |
 | 汽车之家口碑信息 | [autohome_wom_spider](https://github.com/cjladmin/spider_cases/tree/main/autohome_wom_spider) | requests、lxml、re、fontTools |
+| 自如网房价信息 | [ziroom_message_spider](https://github.com/cjladmin/spider_cases/tree/main/ziroom_message_spider) | requests、lxml、re、time、pytesseract、PIL |
 
 </div>
 
