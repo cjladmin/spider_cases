@@ -1,8 +1,8 @@
 # encoding: utf-8
-# @Time : 2022/4/24 14:57
+# @Time : 2022/5/24 14:57
 # @Author : Torres-圣君
-# @File : douban_run_spider.py
-# @Sofaware : PyCharm
+# @File : run_spider.py
+# @Software : PyCharm
 import random
 import time
 import re
@@ -109,7 +109,7 @@ class SaveTaobaoData:
         content = self.driver.page_source
         if "亲，请拖动下方滑块完成验证" in content:
             con = self.hua_kuai()
-            count = 0
+            count = 1
             while "亲，请拖动下方滑块完成验证" in con and count <= 3:
                 con = self.hua_kuai()
                 count += 1

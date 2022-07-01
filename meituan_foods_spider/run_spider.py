@@ -1,8 +1,8 @@
 # encoding: utf-8
 # @Time : 2022/4/22 14:59
 # @Author : Torres-圣君
-# @File : douban_run_spider.py
-# @Sofaware : PyCharm
+# @File : run_spider.py
+# @Software : PyCharm
 import json
 import re
 import time
@@ -102,7 +102,7 @@ class MeituanSpider:
 
         # 对每一个美食分类的分类名和分类url地址进行遍历并分别进行处理
         for i in item_list:
-            time.sleep(2)
+            time.sleep(3)
             # https请求
             rest = requests.get(i['cate_url'], headers=self.headers, proxies=get_ip())
             # http替换成https后的全部分类链接

@@ -1,7 +1,7 @@
 # encoding: utf-8
 # @Time : 2022/5/11 10:52
 # @Author : Torres-圣君
-# @File : download_fonts.py
+# @File : run_spider.py
 # @Sofaware : PyCharm
 import time
 from get_url_data import *

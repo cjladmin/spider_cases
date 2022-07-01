@@ -1,8 +1,8 @@
 # -*- coding:utf-8 -*-
 # @Time : 2021/11/15 14:06
 # @Author : Torres-圣君
-# @File : download_fonts.py
-# @Sofaware : PyCharm
+# @File : run_spider.py
+# @Software : PyCharm
 import time
 import json
 import requests

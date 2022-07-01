@@ -1,8 +1,8 @@
 # encoding: utf-8
 # @Time : 2022/5/10 19:18
 # @Author : Torres-圣君
-# @File : download_fonts.py
-# @Sofaware : PyCharm
+# @File : run_spider.py
+# @Software : PyCharm
 import os
 import csv
 from playwright.sync_api import sync_playwright

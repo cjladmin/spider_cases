@@ -1,8 +1,8 @@
 # encoding: utf-8
 # @Time : 2022/5/6 12:03
 # @Author : Torres-圣君
-# @File : douban_run_spider.py
-# @Sofaware : PyCharm
+# @File : run_spider.py
+# @Software : PyCharm
 import requests
 import time
 import re
